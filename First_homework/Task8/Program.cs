@@ -15,7 +15,6 @@ while (evenN <= N)
 else
 {
   int evenN = 0;
-Console.Write("Четные числа от 1 до N: ");
 while (evenN >= N)
 {
     Console.Write(evenN + " ");
