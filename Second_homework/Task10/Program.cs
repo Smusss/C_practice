@@ -7,7 +7,7 @@ Input:
 Console.Write("Введите трехзначное число = ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if ((Math.Abs(number) > 999)||(Math.Abs(number) < 100))
+if ((Math.Abs(number) > 999) || (Math.Abs(number) < 100))
 {
     Console.WriteLine("Число не соответствует заданному параметру");
     goto Input;
