@@ -2,21 +2,17 @@
 // Для решения задания использование цикла for является обязательным условием. Не использовать встроенный метод возведения в степень.
 // 3, 5 -> 243 (3⁵)
 bool check = false;
-string As = string.Empty;
-string Bs = string.Empty;
+string As = String.Empty;
+string Bs = String.Empty;
 
 do
 {
     Console.Write("Введите число A: ");
     As = Console.ReadLine();
-    check = double.TryParse(As, out double As);
-    if (check)
+    check = Double.TryParse(As, out double Ad);
+    if (check == false)
     {
-        Double.Parse(As, out double A);
-    }
-    else
-    {
-        Console.WriteLine("Введено неверное значение, попробуйте еще раз.");
+       Console.WriteLine("Введено неверное значение, попробуйте еще раз.");
     }
 }
 while (check == false);
@@ -25,15 +21,18 @@ while (check == false);
 do
 {
     Console.Write("Введите число B: ");
-    B = Console.ReadLine();
-    Double.TryParse(B, out double B);
-    if (Double.TryParse(B, out double B) == false)
+    Bs = Console.ReadLine();
+    check = Double.TryParse(Bs, out double Bd);
+    if (check == false)
     {
         Console.WriteLine("Введено неверное значение, попробуйте еще раз.");
     }
 }
-while (Double.TryParse(B, out double B) == false);
+while (check == false);
 //double B = Convert.ToDouble(Console.ReadLine());
+
+double A = Convert.ToDouble(As);
+double B = Convert.ToDouble(Bs);
 
 double PowA = 1;
 int i = 1;
