@@ -32,7 +32,6 @@ do // проверка на корректность ввода (искл сим
     }
 }
 while (count < maxCount);
-
 int sum = 0; //вариант с int amount = numberStr.Length; - не подойдет если число отрицательное
 int amount = 1;
 int newNum = Math.Abs(numberInt);
