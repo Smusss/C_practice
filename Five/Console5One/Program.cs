@@ -22,3 +22,5 @@ for (int i = 0; i < array.Length; i++)
 }
 Console.WriteLine($"Sum positive numbers = {sumPlus}");
 Console.WriteLine($"Sum negative numbers = {sumMinus}");
+
+Console.ReadKey();
