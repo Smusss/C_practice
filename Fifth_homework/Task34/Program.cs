@@ -52,7 +52,7 @@ int searchEvenElements(int[] array) // поиск  и подсчет четны�
 
 string message = "Input array length:";
 bool statusLength = inputLengthAndCheck(message, out int length);
-if (!statusLength)
+if (!statusLength||length == 0)
 {
     Console.WriteLine("Three attempts to enter the array length incorrectly.");
 }
@@ -62,4 +62,3 @@ else
     int countEven = searchEvenElements(array);
     Console.WriteLine($"Number of even array elements: {countEven}");
 }
-
