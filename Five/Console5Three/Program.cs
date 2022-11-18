@@ -24,16 +24,15 @@ bool InputNumAndCheckSymb(string message, out int number)
 }
 bool findSameNumber(int[] array, int number)
 {
-    bool findSame = false;
     for (int i = 0; i < array.Length; i++)
     {
         if (number == array[i])
         {
-            findSame = true;
+            return true;
             break;
         }
     }
-    return findSame;
+    return false;
 }
 int[] array = new int[10] { 1, 16, 2, 277, 3, 98, 4, 56, 5, -963 };
 string message = "Input your number: ";
