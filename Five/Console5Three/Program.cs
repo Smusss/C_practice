@@ -8,7 +8,7 @@ bool InputNumAndCheckSymb(string message, out int number)
     for (int i = 0; i < count; i++)
     {
         Console.Write(message);
-        string numberStr = Console.ReadLine();
+        string? numberStr = Console.ReadLine();
         check = int.TryParse(numberStr, out int result);
         if (!check)
         {
