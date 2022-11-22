@@ -6,7 +6,7 @@ double AskAndCheckCoordinate(string message) // запрос координат�
 {
 Question: // ссылка для посторного запроса
     Console.Write($"{message}");
-    string Coord = Console.ReadLine();
+    string? Coord = Console.ReadLine();
        if (Double.TryParse(Coord, out double newCoord) == false) //если буква - повтор запроса 
     {
         Console.WriteLine("Некорректный ввод координаты. Введите число.");
