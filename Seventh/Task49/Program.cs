@@ -32,7 +32,7 @@ int[,] changeTableElements(int[,] table)
     {
         for (int j = 0; j < table.GetLength(1); j++)
         {
-            if (i == j)
+            if (i % 2 == 0 && j % 2 == 0)
             {
                 table[i, j] = table[i, j] * table[i, j];
             }
